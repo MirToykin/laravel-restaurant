@@ -18,3 +18,6 @@ use Illuminate\Support\Facades\Route;
 //});
 
 Route::get('/', 'RestoController@index');
+Route::get('list', 'RestoController@restoList');
+Route::view('add', 'add');
+Route::post('add', 'RestoController@add');
