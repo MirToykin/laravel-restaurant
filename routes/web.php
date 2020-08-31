@@ -21,3 +21,6 @@ Route::get('/', 'RestoController@index');
 Route::get('list', 'RestoController@restoList');
 Route::view('add', 'add');
 Route::post('add', 'RestoController@add');
+Route::get('delete/{id}', 'RestoController@delete');
+Route::get('edit/{id}', 'RestoController@edit');
+Route::post('update', 'RestoController@update');
